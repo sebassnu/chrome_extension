@@ -1,0 +1,25 @@
+{
+    "name": "Hiro",
+    "version": "1.0",
+    "description": "Hiro´s chrome extension to do live reviewing",
+    "manifest_version": 2,
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0E0iq5vmXKBgr2zmJMWGpZhUUM166Z2RcLRaql71DfcWqIiugAZ2Sntb9SfNUXtSzT93EUqiOPbO9avO6MiVkbAonS0gkjE8vL8/vUwAk1C7ObPm/FZ6HT9P/VLcS8fXRmii2amBtC+EKB8hb9h1DoZlVnT2ptUcolm1ubeKjfaTsaTibFzqwbPqGv1h21aMto4XSwIohjIMyE3vf/oF4vorlV9f5rpLarqL9ExKhgXvz2o89LOZGm5gOBthFqGcFekpUZ5gmZloB/yc8fAXDvIAN+YJdair/IkheLDspmyrvQ7f2D1fyrpL1l6RpQVYvuwsW/AqVAa8GfetoPVDewIDAQAB",
+    "browser_action": {
+      "default_title": "Hiro - Live candidate review",
+      "default_popup" : "popup.html",
+      "default_icon" : "./assets/h-logo.png"
+    },
+    "oauth2" : {
+        "client_id" : "974720890956-qfddn2oo3dajjt11iglsbbi6fbrnhras.apps.googleusercontent.com",
+        "scopes" : ["https://www.googleapis.com/auth/userinfo.email"]
+    },
+    "permissions" : [
+        "identity",
+        "storage"
+    ],
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  }
